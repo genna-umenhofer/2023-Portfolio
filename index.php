@@ -174,7 +174,7 @@ include(".env.php");
       <input type="email" id="email" name="email" placeholder="Your Email" required />
       <textarea type="textarea" rows="5" id="message" placeholder="Your Message" name="message" required></textarea>
       <div class="side-by-side">
-        <div class="g-recaptcha" data-sitekey="<? echo $siteKey ?>"></div>
+        <div class="g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div>
         <input type="submit" class="contact-button full-size" id="submit-form-button" />
       </div>
 
