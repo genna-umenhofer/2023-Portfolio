@@ -1,0 +1,551 @@
+/* --- global styling --- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #393434;
+  color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+strong {
+  /*color: #393434;*/
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.dark-text-no-hover {
+  color: #000000;
+}
+
+.dark-text {
+  color: #000000;
+}
+
+.dark-text:hover {
+  color: goldenrod;
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.center-text {
+  text-align: center;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -40px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
+.margin {
+  margin: 1rem !important;
+}
+
+/* --- hero section --- */
+#hero {
+  background-image: url("./assets/flower-background.jpeg");
+  background-size: cover;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.white-background {
+  background-color: rgba(217, 217, 217, 0.75);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.med-text {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.large-text {
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.line {
+  border: 1px solid #000000;
+  width: 40%;
+  align-self: center;
+  margin: 1rem;
+}
+
+/* --- navigation --- */
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+ text-align: center;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+li {
+  width: 85px;
+  margin: 10px;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.full-size {
+  width: 100%;
+}
+
+.contact-button {
+  margin: 1rem;
+  border: #393434;
+  background-color: goldenrod;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  
+}
+
+.contact-button:hover {
+  background-color: #393434;
+  color: goldenrod;
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+.contact-button:active {
+  background-color: #000000;
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.icon {
+  color:#393434;
+  padding: .8rem;
+}
+
+.icon:hover {
+  color: goldenrod;
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+/* --- projects section & cards --- */
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.section-header {
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+#projects p {
+  padding: 0 1rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+#projects h3 {
+  padding: 0 1rem 0 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#projects h4 {
+  padding: 1rem 1rem .5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.hover-text:hover {
+  color: #393434;
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.large-card {
+  width: 80%;
+  margin: 4rem 0;
+}
+
+.large-project-icon {
+  display: flex;
+  width: 95%;
+  margin: 0 auto 1rem auto;
+  padding: .5rem;
+  /*height: 5rem;*/
+  background-color: goldenrod;
+  box-shadow: 5px 5px 4px #000000;
+  color: #393434;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-icon {
+  background-color: rgba(217, 217, 217, 0.75);
+  border: none;
+  color: #FFFFFF;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.project-icon:hover {
+  transition: all .2s ease-in-out; 
+  transform: scale(1.1); 
+  background-color: goldenrod;
+  color: #393434;
+}
+/*
+.large-card ul {
+  display: flex;
+  list-style-type: none;
+}*/
+
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.flex-row-left {
+  display: flex;
+  justify-content: left;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.stack-icons {
+  display: flex;
+  padding: 1rem 1rem 1rem 1rem;
+  justify-content: space-around;
+  font-size: 2.3rem;
+}
+
+.other-skills {
+  padding: 1rem;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+/* --- About Me Section --- */
+#about-me {
+  margin: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+#about-photo {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 4px #000000;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 0rem 2rem;
+}
+
+/* --- contact section --- */
+#contact-form {
+  background-image: url("./assets/flower-background.jpeg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: 55%;
+}
+
+input {
+  height: 3rem;
+  padding: .5rem;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+}
+
+textarea {
+  padding: .5rem;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+}
+
+.side-by-side {
+  display: flex;
+}
+
+/* --- thanks page ---*/
+#thanks-page {
+  background-image: url("assets/flower-background.jpeg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- footer ---*/
+footer {
+  display: none;
+}
+
+/* --- media queries --- */
+@media (max-width: 800px) {
+  .large-card {
+    width: 100%;
+    margin: 3rem 1rem;
+  }
+
+  #about-me {
+    flex-direction: column;
+    margin: 10% 5%;
+  }
+
+  #about-me img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
+  
+
+  #about-photo {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    width: 100%;
+    min-width: 330px;
+  }
+  
+  .container {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  .section-header {
+    margin: 1rem auto 3rem auto;
+  }
+
+  .large-text {
+    width: 95%;
+    font-size: 2rem;
+  }
+
+  .med-text {
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #hero {
+    background-color: #000000;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .large-card {
+    width: 100%;
+    margin: 3rem 1rem;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  #about-photo {
+    max-width: 65%;
+    min-width: 220px;
+    margin-bottom: 3rem;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  #contact-me {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    z-index: 3;
+    width: 100%;
+  }
+
+  li {
+    font-size: 1rem;
+    width: 60px;
+  }
+
+  .flex-row-center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-icon {
+    margin: .5rem 0;
+  }
+
+  .flex-row-left {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+}
