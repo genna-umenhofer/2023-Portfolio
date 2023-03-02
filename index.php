@@ -13,7 +13,7 @@ include(".env.php");
       <p class="med-text">Ready to start a new project?</p>
       <div class="flex-row-center">
         <a href="#contact" class="contact-button margin">Contact Me</a>
-        <a href="assets/genna-u-resume.pdf" class="contact-button margin" download>Download My Resume</a>
+        <a href="assets/Umenhofer Website Resume 2023.pdf" class="contact-button margin" download>Download My Resume</a>
       </div>
 
     </div>
@@ -82,7 +82,7 @@ include(".env.php");
         <i class="devicon-figma-plain" title="Figma"></i>
       </div>
       <div class="flex-row-center">
-      <a href="https://docs.google.com/document/d/1ews5RQHXuu6b61LQKzp34RBGuIm6TiG7WekQgUfYZUk/edit?usp=sharing" target="_blank" class="project-icon">Design Docs</a>
+      <a href="assets/Simply Complex UX_UI Design Portfolio.pdf" class="project-icon" download>Design Docs</a>
         <a href="https://github.com/genna-umenhofer/new-simply-complex" target="_blank" class="project-icon">GitHub Code</a>
         <a href="https://simplycomplexartshop.com" target="_blank" class="project-icon">Live Site</a>
       </div>
@@ -122,7 +122,7 @@ include(".env.php");
         <i class="devicon-figma-plain" title="Figma"></i>
       </div>
       <div class="flex-row-center">
-        <a href="https://docs.google.com/document/d/1fpFtGddLH3K5rr29uB6bjmGzPURFnGgfGNpRgzO8isU/edit?usp=sharing" target="_blank" class="project-icon">Design Docs</a>
+        <a href="assets/GuacaMOLE UX_UI Design Portfolio.pdf"  class="project-icon" download>Design Docs</a>
         <a href="https://github.com/genna-umenhofer/GuacaMOLE" target="_blank" class="project-icon">GitHub Code</a>
         <a href="https://guacamole.one" target="_blank" class="project-icon">Live Site</a>
       </div>
@@ -158,7 +158,7 @@ include(".env.php");
     <p class="about-text">Hello, I'm Genna Umenhofer. I'm a <strong>full stack developer </strong> with an eye for design. <br><br>I love this industry because it is full of <strong>complex</strong> ideas, <strong>relevant</strong> problems, and the <strong>opportunity</strong> to learn new things. My favorite part about working with clients is hearing the <strong>passion</strong> in their voice, and translating that to an <strong>impactful</strong> final product. Let's discuss your passions, and get started on your project!</p>
     <div class="flex-row-left">
         <a href="#contact" class="project-icon">Contact Me</a>
-        <a href="assets/genna-u-resume.pdf" class="project-icon" download>Download Resume</a>
+        <a href="assets/Umenhofer Website Resume 2023.pdf" class="project-icon" download>Download Resume</a>
       </div>
   </div>
 </section>
@@ -174,7 +174,7 @@ include(".env.php");
       <input type="email" id="email" name="email" placeholder="Your Email" required />
       <textarea type="textarea" rows="5" id="message" placeholder="Your Message" name="message" required></textarea>
       <div class="side-by-side">
-        <div class="g-recaptcha" data-sitekey="6Lf_FikjAAAAANuUbfEAD5LECp_-Q3No7GMaMI0V"></div>
+        <div class="g-recaptcha" data-sitekey="<? echo $siteKey ?>"></div>
         <input type="submit" class="contact-button full-size" id="submit-form-button" />
       </div>
 
